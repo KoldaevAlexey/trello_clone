@@ -9,6 +9,24 @@ const Header = () => {
     return (
         <header>
             <div className="flex flex-col md:flex-row items-center p-5 bg-gray-500/10 rounded-b-2xl">
+                <div
+                    className="
+                absolute
+                top-0
+                left-0
+                w-full
+                h-96
+                bg-gradient-to-br
+                from-indigo-700
+                to-sky-400
+                rounded-md
+                filter
+                blur-3xl
+                opacity-50
+                -z-50
+                "
+                />
+
                 <Image
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Trello-logo-blue.svg/2560px-Trello-logo-blue.svg.png"
                     alt="Trello logo"
@@ -18,7 +36,6 @@ const Header = () => {
                 />
 
                 <div className="flex items-center space-x-5 justify-end w-full">
-                    {/* Search box */}
                     <form className="flex items-center space-x-5 bg-white rounded-md p-2 shadow-md flex-1 md:flex-initial">
                         <MagnifyingGlassIcon className="h-6 w-6 text-gray-400" />
                         <input
@@ -30,7 +47,7 @@ const Header = () => {
                             Search
                         </button>
                     </form>
-                    {/* Avatar */}
+
                     <Avatar
                         name="Alexey Koldaev"
                         round
