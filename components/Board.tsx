@@ -20,7 +20,7 @@ const Board = () => {
     }, [getBoard]);
 
     const handleOnDragEnd = (result: DropResult) => {
-        const { destination, draggableId, type, source } = result;
+        const { destination, type, source } = result;
 
         if (!destination) return;
 

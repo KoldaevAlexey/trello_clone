@@ -26,7 +26,8 @@ const TodoCard = ({
     draggableProps,
     dragHandleProps,
 }: TodoCardProps) => {
-    const deleteTask = useBoardStore((state) => [state.deleteTask]);
+    
+    const deleteTask = useBoardStore((state) => state.deleteTask);
 
     return (
         <div
